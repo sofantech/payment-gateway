@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->tinyInteger('is_active')->default(1);
+            $table->string('public_key');
+            $table->string('private_key');
             $table->timestamps();
         });
     }

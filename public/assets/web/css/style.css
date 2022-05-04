@@ -85,17 +85,17 @@ a
 /*start header section */
 header
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    padding: 1rem 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    box-shadow: var(--box-shadow);
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: #fff !important;
+    padding: 1rem 7% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    z-index: 1000 !important;
+    box-shadow: var(--box-shadow) !important;
 }
 header .logo
 {
@@ -109,10 +109,10 @@ header .logo i
 }
 header .navbar a
 {
-    font-size: 1.7rem;
-    border-radius: 0.5rem;
-    padding: .5rem 1.5rem;
-    color: var(--light-color);
+    font-size: 1.7rem !important;
+    border-radius: 0.5rem !important;
+    padding: .5rem 1.5rem !important;
+    color: var(--light-color) !important;
 
 }
 header .navbar a:hover,header .navbar a.active
@@ -572,47 +572,47 @@ section:nth-child(even).login-form
 {
     html
     {
-        font-size: 55%;
+        font-size: 55% !important;
     }
     header
     {
-        padding: 1rem 2rem;
+        padding: 1rem 2rem !important;
     }
     section
     {
-        padding: 2rem;
+        padding: 2rem !important;
     }
 }
 @media(max-width:768px)
 {
     header .icon #menu-bars
     {
-        display: inline-block;
+        display: inline-block !important;
     }
     header .navbar
     {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        border-bottom: .1rem solid rgba(0, 0, 0, .2);
-        padding: 1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: #fff !important;
+        border-top: .1rem solid rgba(0, 0, 0, .2) !important;
+        border-bottom: .1rem solid rgba(0, 0, 0, .2) !important;
+        padding: 1rem !important;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) !important;
     }
     header .navbar.active
     {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
     }
    
     header .navbar a
     {
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: #eee;
+        display: block !important;
+        padding: 1.5rem !important;
+        margin: 1rem !important;
+        font-size: 2rem !important;
+        background: #eee !important;
 
     }
     #search-form #search-box

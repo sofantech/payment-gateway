@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\API\APIPaymentController;
+use App\Http\Controllers\testApi\paymentController;
 use App\Http\Controllers\user\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -112,3 +113,12 @@ Route::group([
 });
 
 
+// ----------------------------- testApi routes ------------------------------//
+Route::group([
+    'prefix' => 'test',
+    
+], function () {
+    Route::post('/merchant/payment_order', [paymentController::class, 'payment_order'])->name('payment_order');
+    Route::get('/merchant/do_payment_order/{invoice_referance}',[paymentController::class,'do_payment'])->name('do_payment');
+      
+});
